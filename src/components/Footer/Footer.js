@@ -5,7 +5,7 @@ import TextWithIcon from '../TextWithIcon';
 import './Footer.scss';
 
 const Footer = () => (
-  <footer>
+  <footer className="footer">
     <section>
       <h3>Contact Us</h3>
       <ul>

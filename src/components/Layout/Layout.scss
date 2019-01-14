@@ -13,43 +13,6 @@
   min-height: 100%;
   min-height: 100vh;
 
-  footer {
-    background: rgba(51, 51, 51, 0.9);
-    color: $text-light;
-    font-size: 0.8em;
-    padding: 40px 40px 20px 40px;
-    width: 100%;
-
-    a {
-      color: $text-white;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
-    h3 {
-      color: $text-white;
-      font-size: 0.9em;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-    }
-
-    p {
-      font-size: 0.9em;
-      font-weight: 300;
-      margin-bottom: 10px;
-    }
-
-    small {
-      display: block;
-      font-size: 0.8em;
-      font-weight: 300;
-      text-align: center;
-    }
-  }
-
   main {
     background: rgba(0, 0, 0, 0.3);
     display: flex;
