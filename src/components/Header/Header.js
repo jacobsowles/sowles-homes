@@ -20,6 +20,7 @@ const Header = ({ siteTitle }) => (
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>
+
     <Navbar.Collapse>
       <Nav pullRight>
         <ListItem>
@@ -27,9 +28,6 @@ const Header = ({ siteTitle }) => (
         </ListItem>
         <ListItem>
           <Link to="/rentals">Rentals</Link>
-        </ListItem>
-        <ListItem>
-          <Link to="/contact">Contact</Link>
         </ListItem>
       </Nav>
     </Navbar.Collapse>

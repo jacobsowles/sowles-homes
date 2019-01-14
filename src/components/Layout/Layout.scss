@@ -3,24 +3,24 @@
 @import '../../styles/variables';
 
 .layout {
+  background: url(../../images/interior-1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   min-height: 100%;
   min-height: 100vh;
 
   .banner {
-    background: url(../../images/interior-1.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     color: $text-dark;
-    padding: 80px;
+    padding: 150px 80px 80px 80px;
     text-align: right;
-    height: 100vh;
 
     h1 {
       font-size: 4em;
+      line-height: 1em;
       margin-bottom: 20px;
     }
 
