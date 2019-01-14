@@ -14,7 +14,8 @@
   }
 
   img {
-    max-width: 380px;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   small {
@@ -28,6 +29,6 @@
     color: $text-white;
     padding: 10px;
     position: absolute;
-    width: 380px;
+    width: calc(100% - 20px);
   }
 }
