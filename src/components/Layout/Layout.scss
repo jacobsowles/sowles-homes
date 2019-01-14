@@ -13,6 +13,10 @@
   min-height: 100%;
   min-height: 100vh;
 
+  &.layout__contact {
+    background-image: url(../../images/desk.jpg);
+  }
+
   &.layout__rentals {
     background-image: url(../../images/interior-3.jpg);
   }

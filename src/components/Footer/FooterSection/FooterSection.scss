@@ -1,6 +1,12 @@
 @import '../../../styles/variables';
 
 .footer-section {
+  margin: 0 40px 20px 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
   h3 {
     color: $text-white;
     font-size: 0.9em;

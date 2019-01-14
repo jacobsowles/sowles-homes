@@ -5,9 +5,12 @@
 }
 
 a {
+  color: $brand-primary;
   text-decoration: none;
 
+  &:focus,
   &:hover {
+    color: $brand-primary;
     text-decoration: underline;
   }
 }

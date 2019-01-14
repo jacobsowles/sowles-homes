@@ -11,23 +11,44 @@ const Footer = ({ transparent }) => (
   <footer
     className={classNames('footer', { footer__transparent: transparent })}
   >
-    <FooterSection title="Contact Us">
-      <ul>
-        <li>
-          <TextWithIcon
-            icon={['fas', 'map-marker-alt']}
-            text="P.O. Box 66013, Portland, OR 97290"
-          />
-        </li>
-        <li>
-          <TextWithIcon
-            icon={['fas', 'envelope']}
-            text="info@sowleshomes.com"
-            url="mailto:info@sowleshomes.com"
-          />
-        </li>
-      </ul>
-    </FooterSection>
+    <div className="footer-section-wrapper">
+      <FooterSection title="Contact Us">
+        <ul>
+          <li>
+            <TextWithIcon
+              icon={['fas', 'map-marker-alt']}
+              text="P.O. Box 66013, Portland, OR 97290"
+            />
+          </li>
+          <li>
+            <TextWithIcon
+              icon={['fas', 'envelope']}
+              text="info@sowleshomes.com"
+              url="mailto:info@sowleshomes.com"
+            />
+          </li>
+        </ul>
+      </FooterSection>
+
+      <FooterSection title="Current Tenants">
+        <ul>
+          <li>
+            <TextWithIcon
+              icon={['fas', 'home']}
+              text="Manage your home"
+              url="https://home.cozy.co/#!/"
+            />
+          </li>
+          <li>
+            <TextWithIcon
+              icon={['fas', 'tools']}
+              text="Submit a maintenance request"
+              url="https://home.cozy.co/app/#!/maintenance-requests/"
+            />
+          </li>
+        </ul>
+      </FooterSection>
+    </div>
 
     <small>
       Copyright © {new Date().getFullYear()} <Link to="/">Sowles Homes</Link>{' '}
