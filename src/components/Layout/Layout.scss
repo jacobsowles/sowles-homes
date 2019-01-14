@@ -14,8 +14,9 @@
   min-height: 100vh;
 
   footer {
-    background: $brand-dark;
+    background: rgba(51, 51, 51, 0.9);
     color: $text-light;
+    font-size: 0.8em;
     padding: 40px 40px 20px 40px;
     width: 100%;
 
@@ -43,28 +44,14 @@
 
     small {
       display: block;
-      font-size: 0.7em;
+      font-size: 0.8em;
       font-weight: 300;
       text-align: center;
-    }
-
-    ul {
-      display: block;
-      margin: 0 auto;
-
-      li {
-        display: inline-block;
-        margin-right: 20px;
-
-        &:last-child {
-          margin-right: 0;
-        }
-      }
     }
   }
 
   main {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     flex: 1;
   }
 
@@ -72,6 +59,20 @@
     color: $text-white;
     padding: 150px 80px 80px 80px;
     text-align: right;
+
+    button {
+      background: rgba(84, 130, 90, 0.8);
+      border: 1px solid #ffffff;
+      font-size: 0.7em;
+      letter-spacing: 1px;
+      margin-top: 10px;
+      padding: 5px 15px;
+      text-transform: uppercase;
+
+      &:hover {
+        background: rgba(84, 130, 90, 1);
+      }
+    }
 
     h1 {
       font-size: 4em;

@@ -9,11 +9,14 @@ const IndexPage = () => (
 
     <section className="banner">
       <h1>Welcome Home</h1>
+
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         <br />
         Ut quis nisl mattis, blandit eros at, viverra purus.
       </p>
+
+      <button>Rentals available now</button>
     </section>
   </Layout>
 );

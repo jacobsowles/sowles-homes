@@ -2,8 +2,12 @@ import { graphql, Link, StaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import { init } from '../../utils/icons';
 import Header from '../Header';
+import TextWithIcon from '../TextWithIcon';
 import './Layout.scss';
+
+init();
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -23,15 +27,23 @@ const Layout = ({ children }) => (
         <footer>
           <section>
             <h3>Contact Us</h3>
-            <p>
-              P.O. Box 66013
-              <br />
-              Portland, OR 97290
-            </p>
-            <p>
-              <a href="mailto:info@sowleshomes.com">info@sowleshomes.com</a>
-            </p>
+            <ul>
+              <li>
+                <TextWithIcon
+                  icon={['fas', 'map-marker-alt']}
+                  text="P.O. Box 66013, Portland, OR 97290"
+                />
+              </li>
+              <li>
+                <TextWithIcon
+                  icon={['fas', 'envelope']}
+                  text="info@sowleshomes.com"
+                  url="mailto:info@sowleshomes.com"
+                />
+              </li>
+            </ul>
           </section>
+
           <small>
             Copyright © {new Date().getFullYear()}{' '}
             <Link to="/">Sowles Homes</Link> &nbsp;|&nbsp; Site design by{' '}
