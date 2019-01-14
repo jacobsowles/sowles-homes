@@ -1,4 +1,85 @@
 @import '../../styles/reset';
+@import '../../styles/global';
+@import '../../styles/variables';
 
 .layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-height: 100vh;
+
+  .banner {
+    background: url(../../images/interior-1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: $text-dark;
+    padding: 80px;
+    text-align: right;
+    height: 100vh;
+
+    h1 {
+      font-size: 4em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
+  footer {
+    background: $brand-dark;
+    color: $text-light;
+    padding: 40px 40px 20px 40px;
+    width: 100%;
+
+    a {
+      color: $text-white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    h3 {
+      color: $text-white;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 0.9em;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+
+    small {
+      display: block;
+      font-size: 0.7em;
+      font-weight: 300;
+      text-align: center;
+    }
+
+    ul {
+      display: block;
+      margin: 0 auto;
+
+      li {
+        display: inline-block;
+        margin-right: 20px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  main {
+    flex: 1;
+  }
 }

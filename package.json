@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "sowles-homes",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Company info and tenant portal for Sowles Homes",
   "version": "0.1.0",
   "author": "Jacob Sowles <jacob@jacobsowles.com>",
   "dependencies": {
@@ -17,6 +17,7 @@
     "node-sass": "^4.11.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0"
   },
