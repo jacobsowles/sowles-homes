@@ -52,36 +52,8 @@
 
   main {
     background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
     flex: 1;
-  }
-
-  .banner {
-    color: $text-white;
-    padding: 150px 80px 80px 80px;
-    text-align: right;
-
-    button {
-      background: rgba(84, 130, 90, 0.8);
-      border: 1px solid #ffffff;
-      font-size: 0.7em;
-      letter-spacing: 1px;
-      margin-top: 10px;
-      padding: 5px 15px;
-      text-transform: uppercase;
-
-      &:hover {
-        background: rgba(84, 130, 90, 1);
-      }
-    }
-
-    h1 {
-      font-size: 4em;
-      line-height: 1em;
-      margin-bottom: 20px;
-    }
-
-    p {
-      margin-bottom: 10px;
-    }
   }
 }
