@@ -1,0 +1,36 @@
+import { Link } from 'gatsby';
+import React from 'react';
+
+import TextWithIcon from '../TextWithIcon';
+import './Footer.scss';
+
+const Footer = () => (
+  <footer>
+    <section>
+      <h3>Contact Us</h3>
+      <ul>
+        <li>
+          <TextWithIcon
+            icon={['fas', 'map-marker-alt']}
+            text="P.O. Box 66013, Portland, OR 97290"
+          />
+        </li>
+        <li>
+          <TextWithIcon
+            icon={['fas', 'envelope']}
+            text="info@sowleshomes.com"
+            url="mailto:info@sowleshomes.com"
+          />
+        </li>
+      </ul>
+    </section>
+
+    <small>
+      Copyright © {new Date().getFullYear()} <Link to="/">Sowles Homes</Link>{' '}
+      &nbsp;|&nbsp; Site design by{' '}
+      <a href="https://jacobsowles.com">Jacob Sowles</a>
+    </small>
+  </footer>
+);
+
+export default Footer;
