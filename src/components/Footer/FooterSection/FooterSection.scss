@@ -1,0 +1,10 @@
+@import '../../../styles/variables';
+
+.footer-section {
+  h3 {
+    color: $text-white;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+}

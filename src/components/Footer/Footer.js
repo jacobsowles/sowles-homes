@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import FooterSection from './FooterSection';
 import TextWithIcon from '../TextWithIcon';
 import './Footer.scss';
 
@@ -10,8 +11,7 @@ const Footer = ({ transparent }) => (
   <footer
     className={classNames('footer', { footer__transparent: transparent })}
   >
-    <section>
-      <h3>Contact Us</h3>
+    <FooterSection title="Contact Us">
       <ul>
         <li>
           <TextWithIcon
@@ -27,7 +27,7 @@ const Footer = ({ transparent }) => (
           />
         </li>
       </ul>
-    </section>
+    </FooterSection>
 
     <small>
       Copyright © {new Date().getFullYear()} <Link to="/">Sowles Homes</Link>{' '}
