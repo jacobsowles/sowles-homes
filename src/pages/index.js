@@ -5,7 +5,7 @@ import Section from '../components/Section';
 import SEO from '../components/SEO';
 
 const IndexPage = () => (
-  <Layout>
+  <Layout className="layout__home" transparentFooter>
     <SEO description="" keywords={[]} title="Home" />
 
     <Section banner>

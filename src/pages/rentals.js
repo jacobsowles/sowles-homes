@@ -5,7 +5,7 @@ import Section from '../components/Section';
 import SEO from '../components/SEO';
 
 const RentalsPage = () => (
-  <Layout>
+  <Layout className="layout__rentals">
     <SEO description="" keywords={[]} title="Available Rentals" />
 
     <Section banner>

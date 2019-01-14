@@ -13,6 +13,10 @@
   min-height: 100%;
   min-height: 100vh;
 
+  &.layout__rentals {
+    background-image: url(../../images/interior-3.jpg);
+  }
+
   main {
     background: rgba(0, 0, 0, 0.3);
     display: flex;

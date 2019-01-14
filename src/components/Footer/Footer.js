@@ -1,11 +1,15 @@
+import classNames from 'classnames';
 import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import TextWithIcon from '../TextWithIcon';
 import './Footer.scss';
 
-const Footer = () => (
-  <footer className="footer">
+const Footer = ({ transparent }) => (
+  <footer
+    className={classNames('footer', { footer__transparent: transparent })}
+  >
     <section>
       <h3>Contact Us</h3>
       <ul>
@@ -32,5 +36,13 @@ const Footer = () => (
     </small>
   </footer>
 );
+
+Footer.propTypes = {
+  transparent: PropTypes.bool,
+};
+
+Footer.defaultProps = {
+  transparent: false,
+};
 
 export default Footer;

@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { graphql, StaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -9,7 +10,7 @@ import './Layout.scss';
 
 init();
 
-const Layout = ({ children }) => (
+const Layout = ({ children, className, transparentFooter }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -21,10 +22,10 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div className="layout">
+      <div className={classNames('layout', className)}>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
-        <Footer />
+        <Footer transparent={transparentFooter} />
       </div>
     )}
   />
@@ -32,6 +33,13 @@ const Layout = ({ children }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+  transparentFooter: PropTypes.bool,
+};
+
+Layout.defaultProps = {
+  className: '',
+  transparentFooter: false,
 };
 
 export default Layout;
