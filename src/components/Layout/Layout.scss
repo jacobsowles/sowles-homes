@@ -13,22 +13,6 @@
   min-height: 100%;
   min-height: 100vh;
 
-  .banner {
-    color: $text-dark;
-    padding: 150px 80px 80px 80px;
-    text-align: right;
-
-    h1 {
-      font-size: 4em;
-      line-height: 1em;
-      margin-bottom: 20px;
-    }
-
-    p {
-      margin-bottom: 10px;
-    }
-  }
-
   footer {
     background: $brand-dark;
     color: $text-light;
@@ -80,6 +64,23 @@
   }
 
   main {
+    background: rgba(0, 0, 0, 0.5);
     flex: 1;
+  }
+
+  .banner {
+    color: $text-white;
+    padding: 150px 80px 80px 80px;
+    text-align: right;
+
+    h1 {
+      font-size: 4em;
+      line-height: 1em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
   }
 }

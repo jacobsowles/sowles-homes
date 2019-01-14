@@ -83,11 +83,11 @@
   .navbar-nav {
     > li {
       > a {
-        border-bottom: 2px solid $background-white;
+        border-bottom: 4px solid $background-white;
         color: $text-dark;
         font-size: 0.8em;
         font-weight: 400;
-        padding: 30px 15px 28px 15px;
+        padding: 30px 20px 26px 20px;
         text-transform: uppercase;
 
         &[aria-current='page'] {
