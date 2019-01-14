@@ -19,7 +19,7 @@ const RentalsPage = () => (
     </Section>
 
     <Section color="white" flex>
-      There are currently no rentals available. Please check back later.
+      <p>There are currently no rentals available. Please check back later.</p>
     </Section>
   </Layout>
 );
