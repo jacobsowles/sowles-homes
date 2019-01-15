@@ -30,13 +30,20 @@ const Footer = ({ transparent }) => (
         </ul>
       </FooterSection>
 
-      <FooterSection title="Current Tenants">
+      <FooterSection title="Tenants">
         <ul>
           <li>
             <TextWithIcon
               icon={['fas', 'home']}
               text="Manage your home"
               url="https://home.cozy.co/#!/"
+            />
+          </li>
+          <li>
+            <TextWithIcon
+              icon={['fas', 'credit-card']}
+              text="Make or review rent payments"
+              url="https://home.cozy.co/app/#!/payments/"
             />
           </li>
           <li>

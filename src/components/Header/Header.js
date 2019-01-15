@@ -33,7 +33,7 @@ const Header = ({ siteTitle }) => (
           <Link to="/contact">Contact</Link>
         </ListItem>
         <ListItem>
-          <Link to="/tenants">Current Tenants</Link>
+          <Link to="/tenants">Tenants</Link>
         </ListItem>
       </Nav>
     </Navbar.Collapse>
