@@ -36,7 +36,7 @@
   padding: 0;
 
   .container {
-    padding: 0 15px 0 30px;
+    padding: 0 15px 0 35px;
     width: 100% !important;
   }
 
@@ -124,7 +124,7 @@
     border: 0;
     border-radius: 0;
     margin: 0;
-    padding: 33px 5px 33px 0;
+    padding: 33px 0;
 
     &:focus,
     &:hover,
@@ -143,7 +143,7 @@
 @media only screen and (max-width: 767px) {
   .navbar {
     .container {
-      padding: 0 15px;
+      padding: 0 20px;
     }
 
     .navbar-collapse.collapsing,

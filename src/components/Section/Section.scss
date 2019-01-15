@@ -41,3 +41,16 @@
     background: rgba(255, 255, 255, 1);
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .section {
+    padding: 20px;
+
+    &.section__banner {
+      color: $text-white;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+    }
+  }
+}
