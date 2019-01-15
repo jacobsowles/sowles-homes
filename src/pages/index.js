@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 
 import Layout from '../components/Layout';
@@ -17,7 +18,9 @@ const IndexPage = () => (
         Ut quis nisl mattis, blandit eros at, viverra purus.
       </p>
 
-      <button>Rentals available now</button>
+      <Link className="button" to="/rentals">
+        Rentals available now
+      </Link>
     </Section>
   </Layout>
 );
