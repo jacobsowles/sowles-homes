@@ -11,8 +11,6 @@ const Header = ({ siteTitle }) => (
     <Navbar.Header>
       <Navbar.Brand>
         <Link className="home-link" to={`/`}>
-          <Logo />
-
           <div className="header-text-wrapper">
             <h1>{siteTitle}</h1>
           </div>
