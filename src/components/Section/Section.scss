@@ -12,10 +12,11 @@
       background: rgba(84, 130, 90, 0.8);
       border: 1px solid #ffffff;
       color: $text-white;
+      display: inline-block;
       font-size: 0.7em;
       letter-spacing: 1px;
       margin-top: 10px;
-      padding: 8px 15px;
+      padding: 5px 15px;
       text-transform: uppercase;
 
       &:hover {
