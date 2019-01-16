@@ -10,7 +10,7 @@ import './Layout.scss';
 
 init();
 
-const Layout = ({ children, className, transparentFooter }) => (
+const Layout = ({ children, className, style, transparentFooter }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -22,7 +22,7 @@ const Layout = ({ children, className, transparentFooter }) => (
       }
     `}
     render={data => (
-      <div className={classNames('layout', className)}>
+      <div className={classNames('layout', className)} style={style}>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <Footer transparent={transparentFooter} />
@@ -34,11 +34,13 @@ const Layout = ({ children, className, transparentFooter }) => (
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
+  style: PropTypes.object,
   transparentFooter: PropTypes.bool,
 };
 
 Layout.defaultProps = {
   className: '',
+  style: undefined,
   transparentFooter: false,
 };
 
