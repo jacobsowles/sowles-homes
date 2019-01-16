@@ -24,13 +24,13 @@ const Header = ({ siteTitle }) => (
           <Link to="/">Home</Link>
         </ListItem>
         <ListItem>
-          <Link to="/rentals">Rentals</Link>
+          <Link to="/rentals/">Rentals</Link>
         </ListItem>
         <ListItem>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact/">Contact</Link>
         </ListItem>
         <ListItem>
-          <Link to="/tenants">Tenants</Link>
+          <Link to="/tenants/">Tenants</Link>
         </ListItem>
       </Nav>
     </Navbar.Collapse>
