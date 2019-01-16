@@ -16,7 +16,7 @@ const IndexPage = () => (
         transparentFooter
       >
         <SEO
-          description=""
+          description="Providing the people of Portland and surrounding areas with a place to call home"
           keywords={[
             'homes',
             'houses',
