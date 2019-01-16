@@ -10,9 +10,23 @@
   }
 
   &.section__banner {
+    align-items: flex-end;
     color: $text-white;
-    padding: 150px 80px 300px 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 130px 80px 300px 80px;
     text-align: right;
+
+    h1 {
+      font-size: 4em;
+      line-height: 1em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+      max-width: 450px;
+    }
 
     .button {
       background: rgba(84, 130, 90, 0.8);
@@ -29,16 +43,6 @@
         background: rgba(84, 130, 90, 1);
         text-decoration: none;
       }
-    }
-
-    h1 {
-      font-size: 4em;
-      line-height: 1em;
-      margin-bottom: 10px;
-    }
-
-    p {
-      margin-bottom: 10px;
     }
   }
 
@@ -74,6 +78,7 @@
     padding-right: 20px;
 
     &.section__banner {
+      align-items: center;
       color: $text-white;
       padding-left: 20px;
       padding-right: 20px;

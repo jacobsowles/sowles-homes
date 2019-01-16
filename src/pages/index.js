@@ -36,12 +36,12 @@ const IndexPage = () => (
           <h1>Welcome Home</h1>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <br />
-            Ut quis nisl mattis, blandit eros at, viverra purus.
+            Sowles Homes aims to provide the people of Portland and surrounding
+            areas with a home to be proud of. We currently have units available.
+            Come take a look!
           </p>
 
-          <Link className="button" to="/rentals">
+          <Link className="button" to="/rentals/">
             Rentals available now
           </Link>
         </Section>

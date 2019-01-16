@@ -38,9 +38,8 @@ const TenantsPage = () => (
           <h1>Current Tenants</h1>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <br />
-            Ut quis nisl mattis, blandit eros at, viverra purus.
+            If you're already a tenant with us, use the links below to manage
+            your home.
           </p>
         </Section>
 

@@ -39,9 +39,8 @@ const ContactPage = () => (
           <h1>Contact Us</h1>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <br />
-            Ut quis nisl mattis, blandit eros at, viverra purus.
+            Get in touch with your questions and comments. We'll reach out to
+            you as soon as possible.
           </p>
         </Section>
 
