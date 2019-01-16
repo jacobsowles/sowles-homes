@@ -1,11 +1,11 @@
 import { graphql, StaticQuery } from 'gatsby';
+import Image from 'gatsby-image';
 import React from 'react';
 
 import Layout from '../components/Layout';
 import RentalListing from '../components/RentalListing';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
-import bushA from '../images/bush-a.jpeg';
 
 const RentalsPage = () => (
   <StaticQuery
@@ -40,7 +40,10 @@ const RentalsPage = () => (
             state="OR"
             zip="97266"
           >
-            <img src={bushA} alt="Home at 8441 SE Bush Street" />
+            <Image
+              fluid={data.bushImage.childImageSharp.fluid}
+              alt="Home at 8441 SE Bush Street"
+            />
           </RentalListing>
         </Section>
       </Layout>
@@ -53,6 +56,13 @@ const query = graphql`
     bannerImage: file(relativePath: { regex: "/interior-3.jpg/" }) {
       childImageSharp {
         fluid(maxWidth: 3000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    bushImage: file(relativePath: { regex: "/bush-a.jpeg/" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
         }
       }
