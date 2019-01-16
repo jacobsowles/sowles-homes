@@ -16,7 +16,22 @@ const RentalsPage = () => (
           backgroundImage: `url(${data.bannerImage.childImageSharp.fluid.src})`,
         }}
       >
-        <SEO description="" keywords={[]} title="Available Rentals" />
+        <SEO
+          description="Homes available for rent"
+          keywords={[
+            'homes',
+            'houses',
+            'Jacob Sowles',
+            'Kate Sowles',
+            'real estate',
+            'rental',
+            'rent',
+            'Sowles',
+            'Sowles Homes',
+            'Sowles Real Estate',
+          ]}
+          title="Available Rentals"
+        />
 
         <Section banner>
           <h1>Available Rentals</h1>

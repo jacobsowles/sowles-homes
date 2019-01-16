@@ -15,7 +15,25 @@ const ContactPage = () => (
           backgroundImage: `url(${data.bannerImage.childImageSharp.fluid.src})`,
         }}
       >
-        <SEO description="" keywords={[]} title="Contact Us" />
+        <SEO
+          description="Contact Sowles Homes"
+          keywords={[
+            'contact',
+            'email',
+            'homes',
+            'houses',
+            'Jacob Sowles',
+            'Kate Sowles',
+            'phone',
+            'real estate',
+            'rental',
+            'rent',
+            'Sowles',
+            'Sowles Homes',
+            'Sowles Real Estate',
+          ]}
+          title="Contact Us"
+        />
 
         <Section banner>
           <h1>Contact Us</h1>

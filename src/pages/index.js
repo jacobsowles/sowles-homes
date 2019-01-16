@@ -15,7 +15,22 @@ const IndexPage = () => (
         }}
         transparentFooter
       >
-        <SEO description="" keywords={[]} title="Home" />
+        <SEO
+          description=""
+          keywords={[
+            'homes',
+            'houses',
+            'Jacob Sowles',
+            'Kate Sowles',
+            'real estate',
+            'rental',
+            'rent',
+            'Sowles',
+            'Sowles Homes',
+            'Sowles Real Estate',
+          ]}
+          title="Home"
+        />
 
         <Section banner>
           <h1>Welcome Home</h1>
