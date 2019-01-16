@@ -4,12 +4,13 @@ import React from 'react';
 
 import './Section.scss';
 
-const Section = ({ banner, children, className, color, flex }) => (
+const Section = ({ banner, center, children, className, color, flex }) => (
   <section
     className={classNames(
       'section',
       className,
       { section__banner: banner },
+      { section__center: center },
       { section__flex: flex },
       { [`section__${color}`]: color }
     )}
@@ -19,6 +20,7 @@ const Section = ({ banner, children, className, color, flex }) => (
 );
 
 Section.propTypes = {
+  center: PropTypes.bool,
   color: PropTypes.oneOf(['white']),
   banner: PropTypes.bool,
   className: PropTypes.string,
@@ -26,6 +28,7 @@ Section.propTypes = {
 };
 
 Section.defaultProps = {
+  center: false,
   color: undefined,
   banner: false,
   className: '',

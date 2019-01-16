@@ -1,5 +1,6 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
+  faAt,
   faCreditCard,
   faEnvelope,
   faHome,
@@ -8,4 +9,4 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 export const init = () =>
-  library.add(faCreditCard, faEnvelope, faHome, faMapMarkerAlt, faTools);
+  library.add(faAt, faCreditCard, faEnvelope, faHome, faMapMarkerAlt, faTools);

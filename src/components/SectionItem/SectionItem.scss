@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+
+.section-item {
+  display: inline-block;
+  max-width: 800px;
+
+  &:hover {
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+    }
+
+    svg {
+      color: $text-dark;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  svg {
+    color: $text-light;
+    margin-right: 20px;
+    width: 80px !important;
+  }
+
+  .section-item-wrapper {
+    align-items: top;
+    display: flex;
+    margin: 0 auto;
+
+    & > * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

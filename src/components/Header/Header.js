@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 
-import Logo from '../Logo';
 import './Header.scss';
 
 const Header = ({ siteTitle }) => (
