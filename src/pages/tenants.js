@@ -79,7 +79,7 @@ const TenantsPage = () => (
               <SectionItem
                 icon={['fas', 'at']}
                 subtitle="Get in touch and we'll get back to you shortly."
-                title={<Link to="/contact">Contact Us</Link>}
+                title={<Link to="/contact/">Contact Us</Link>}
               />
             </li>
           </ul>
