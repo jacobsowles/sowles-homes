@@ -16,6 +16,7 @@
     flex-direction: column;
     padding: 130px 80px 300px 80px;
     text-align: right;
+    text-shadow: $text-shadow;
 
     h1 {
       font-size: 4em;
@@ -37,6 +38,7 @@
       letter-spacing: 1px;
       margin-top: 10px;
       padding: 5px 15px;
+      text-shadow: none;
       text-transform: uppercase;
 
       &:hover {
