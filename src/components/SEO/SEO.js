@@ -19,6 +19,10 @@ function SEO({ description, lang, meta, keywords, title }) {
             meta={[
               { name: `description`, content: metaDescription },
               { property: `og:description`, content: metaDescription },
+              {
+                property: `og:image`,
+                content: data.bannerImage.childImageSharp.fluid.src,
+              },
               { property: `og:title`, content: title },
               { property: `og:type`, content: `website` },
               { name: `twitter:card`, content: `summary_large_image` },
@@ -29,7 +33,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               { name: `twitter:description`, content: metaDescription },
               {
                 name: `twitter:image`,
-                content: ``,
+                content: data.bannerImage.childImageSharp.fluid.src,
               },
               { name: `twitter:title`, content: title },
             ]
@@ -64,6 +68,13 @@ export default SEO;
 
 const detailsQuery = graphql`
   query DefaultSEOQuery {
+    bannerImage: file(relativePath: { regex: "/interior-1.jpg/" }) {
+      childImageSharp {
+        fluid(maxWidth: 3000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     site {
       siteMetadata {
         title
