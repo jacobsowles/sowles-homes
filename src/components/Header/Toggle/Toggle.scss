@@ -1,0 +1,48 @@
+@import '../../../styles/variables';
+
+.navbar-default {
+  .navbar-toggle {
+    border: 0;
+    border-radius: 0;
+    color: #888888;
+    font-size: 1.5em;
+    margin: 0 0 0 auto;
+    width: 45px;
+
+    &:focus,
+    &:hover,
+    &.collapsed {
+      background: none !important;
+    }
+
+    &:hover {
+      color: $brand-primary;
+    }
+
+    svg {
+      position: absolute;
+      top: 0;
+      height: 100%;
+    }
+  }
+
+  .fade-enter {
+    opacity: 0.01;
+  }
+
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+
+  .fade-exit {
+    opacity: 1;
+  }
+
+  .fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transform: translateX(30px);
+    transition: opacity 500ms ease-in;
+    transition: 500ms;
+  }
+}

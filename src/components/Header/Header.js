@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 
+import Toggle from './Toggle';
 import './Header.scss';
 
 const Header = ({ siteTitle }) => (
@@ -18,7 +19,7 @@ const Header = ({ siteTitle }) => (
           </div>
         </Link>
       </Navbar.Brand>
-      <Navbar.Toggle />
+      <Toggle />
     </Navbar.Header>
 
     <Navbar.Collapse>

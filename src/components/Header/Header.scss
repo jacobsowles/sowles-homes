@@ -126,22 +126,7 @@
   }
 
   .navbar-toggle {
-    border: 0;
-    border-radius: 0;
-    margin: 0;
-    padding: 33px 0;
-
-    &:focus,
-    &:hover,
-    &.collapsed {
-      background: none;
-    }
-
-    &:hover {
-      span {
-        background-color: $brand-primary;
-      }
-    }
+    padding: 53px 0 27px 0;
   }
 }
 
@@ -173,10 +158,6 @@
       margin-right: 0;
       padding: 0;
       width: 100%;
-
-      .navbar-toggle {
-        margin-left: auto;
-      }
     }
   }
 }
