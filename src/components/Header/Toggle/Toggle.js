@@ -26,7 +26,7 @@ class Toggle extends PureComponent {
         }
       >
         <CSSTransition
-          timeout={{ enter: 1000, exit: 1000 }}
+          timeout={{ enter: 2000, exit: 1000 }}
           classNames="fade"
           key="bars"
           in={!isActive}
@@ -36,7 +36,7 @@ class Toggle extends PureComponent {
         </CSSTransition>
 
         <CSSTransition
-          timeout={{ enter: 1000, exit: 1000 }}
+          timeout={{ enter: 2000, exit: 1000 }}
           classNames="fade"
           key="times"
           in={isActive}
