@@ -16,34 +16,93 @@
     }
 
     &:hover {
-      color: $brand-primary;
-    }
-
-    svg {
-      position: absolute;
-      top: 0;
-      height: 100%;
+      .toggle-icon:before,
+      .toggle-icon:after {
+        background: $brand-primary;
+      }
     }
   }
 
-  .fade-enter {
-    opacity: 0.01;
+  .active {
+    &.toggle-icon:before {
+      animation: topBarToX 0.25s;
+      animation-fill-mode: forwards;
+    }
+
+    &.toggle-icon:after {
+      animation: bottomBarToX 0.25s;
+      animation-fill-mode: forwards;
+    }
   }
 
-  .fade-enter.fade-enter-active {
-    opacity: 1;
-    transition-delay: 1s;
-    transition: opacity 500ms ease-in;
+  .inactive {
+    &.toggle-icon:before {
+      animation: topBarToHorizontal 0.25s;
+      animation-fill-mode: forwards;
+    }
+
+    &.toggle-icon:after {
+      animation: bottomBarToHorizontal 0.25s;
+      animation-fill-mode: forwards;
+    }
   }
 
-  .fade-exit {
-    opacity: 1;
+  .toggle-icon {
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    margin: auto;
   }
 
-  .fade-exit.fade-exit-active {
-    opacity: 0.01;
-    transform: rotate(180deg);
-    transition: opacity 500ms ease-in;
-    transition: 500ms;
+  .toggle-icon:before,
+  .toggle-icon:after {
+    content: '';
+    background: #888888;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 20px;
+  }
+
+  .toggle-icon:before {
+    top: -4px;
+  }
+
+  .toggle-icon:after {
+    bottom: -4px;
+  }
+
+  // animate bottom bar from X position into horizontal position
+  @keyframes bottomBarToHorizontal {
+    from {
+      transform: translateY(-4px) rotate(-45deg);
+    }
+    to {
+      transform: translateY(0) rotate(0);
+    }
+  }
+
+  // animate bottom bar from horizontal position to X position
+  @keyframes bottomBarToX {
+    to {
+      transform: translateY(-4px) rotate(-45deg);
+    }
+  }
+
+  // animate top bar from X position into horizontal position
+  @keyframes topBarToHorizontal {
+    from {
+      transform: translateY(4px) rotate(45deg);
+    }
+    to {
+      transform: translateY(0) rotate(0);
+    }
+  }
+
+  // animate top bar from horizontal position to X position
+  @keyframes topBarToX {
+    to {
+      transform: translateY(4px) rotate(45deg);
+    }
   }
 }

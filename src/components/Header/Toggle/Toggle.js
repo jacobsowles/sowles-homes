@@ -1,7 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classNames from 'classnames';
 import React, { PureComponent } from 'react';
 import { Navbar } from 'react-bootstrap';
-import { CSSTransition } from 'react-transition-group';
 
 import './Toggle.scss';
 
@@ -11,47 +10,33 @@ class Toggle extends PureComponent {
 
     this.state = {
       isActive: false,
+      isFirstLoad: true,
     };
   }
 
   render() {
-    const { isActive } = this.state;
+    let className = undefined;
+
+    if (this.state.isActive) {
+      className = 'active';
+    } else {
+      // don't want the first load to animate, so don't give first load the trigger class name
+      if (!this.state.isFirstLoad) {
+        className = 'inactive';
+      }
+    }
 
     return (
-      <Navbar.Toggle
-        onClick={() =>
-          this.setState({
-            isActive: !isActive,
-          })
-        }
-      >
-        <CSSTransition
-          timeout={{ enter: 2000, exit: 1000 }}
-          classNames="fade"
-          key="bars"
-          in={!isActive}
-          unmountOnExit
-        >
-          <FontAwesomeIcon icon={['far', 'bars']} />
-        </CSSTransition>
-
-        <CSSTransition
-          timeout={{ enter: 2000, exit: 1000 }}
-          classNames="fade"
-          key="times"
-          in={isActive}
-          unmountOnExit
-        >
-          <FontAwesomeIcon icon={['far', 'times']} />
-        </CSSTransition>
+      <Navbar.Toggle onClick={this.toggle}>
+        <div className={classNames('toggle-icon', className)} />
       </Navbar.Toggle>
     );
   }
 
   toggle = () => {
     this.setState({
-      showBars: !this.state.showBars,
-      showTimes: !this.state.showTimes,
+      isActive: !this.state.isActive,
+      isFirstLoad: false,
     });
   };
 }
