@@ -6,8 +6,6 @@
     border-radius: 0;
     color: #888888;
     font-size: 1.5em;
-    margin: 0 0 0 auto;
-    width: 45px;
 
     &:focus,
     &:hover,
@@ -21,55 +19,55 @@
         background: $brand-primary;
       }
     }
-  }
 
-  .active {
-    &.toggle-icon:before {
-      animation: topBarToX 0.25s;
-      animation-fill-mode: forwards;
+    .toggle-icon {
+      width: 20px;
+      height: 3px;
+      position: absolute;
+      margin: auto;
+
+      &:before,
+      &:after {
+        content: '';
+        background: #888888;
+        height: 3px;
+        left: 0;
+        position: absolute;
+        width: 20px;
+      }
+
+      &:before {
+        top: -4px;
+      }
+
+      &:after {
+        bottom: -4px;
+      }
+
+      &.active {
+        &.toggle-icon:before {
+          animation: topBarToX 0.25s;
+          animation-fill-mode: forwards;
+        }
+
+        &.toggle-icon:after {
+          animation: bottomBarToX 0.25s;
+          animation-fill-mode: forwards;
+        }
+      }
+
+      &.inactive {
+        &.toggle-icon:before {
+          animation: topBarToHorizontal 0.25s;
+          animation-fill-mode: forwards;
+        }
+
+        &.toggle-icon:after {
+          animation: bottomBarToHorizontal 0.25s;
+          animation-fill-mode: forwards;
+        }
+      }
     }
-
-    &.toggle-icon:after {
-      animation: bottomBarToX 0.25s;
-      animation-fill-mode: forwards;
-    }
-  }
-
-  .inactive {
-    &.toggle-icon:before {
-      animation: topBarToHorizontal 0.25s;
-      animation-fill-mode: forwards;
-    }
-
-    &.toggle-icon:after {
-      animation: bottomBarToHorizontal 0.25s;
-      animation-fill-mode: forwards;
-    }
-  }
-
-  .toggle-icon {
-    width: 20px;
-    height: 3px;
-    position: absolute;
-    margin: auto;
-  }
-
-  .toggle-icon:before,
-  .toggle-icon:after {
-    content: '';
-    background: #888888;
-    height: 3px;
-    left: 0;
-    position: absolute;
-    width: 20px;
-  }
-
-  .toggle-icon:before {
-    top: -4px;
-  }
-
-  .toggle-icon:after {
-    bottom: -4px;
   }
 
   // animate bottom bar from X position into horizontal position
