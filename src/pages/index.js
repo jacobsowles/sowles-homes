@@ -1,4 +1,5 @@
 import { graphql, Link, StaticQuery } from 'gatsby';
+import Image from 'gatsby-image';
 import React from 'react';
 
 import Layout from '../components/Layout';
@@ -9,12 +10,7 @@ const IndexPage = () => (
   <StaticQuery
     query={query}
     render={data => (
-      <Layout
-        style={{
-          backgroundImage: `url(${data.bannerImage.childImageSharp.fluid.src})`,
-        }}
-        transparentFooter
-      >
+      <Layout transparentFooter>
         <SEO
           description="Providing the people of Portland and surrounding areas with a place to call home"
           keywords={[
@@ -32,12 +28,18 @@ const IndexPage = () => (
           title="Home"
         />
 
+        <Image
+          alt="interior"
+          className="background"
+          fluid={data.bannerImage.childImageSharp.fluid}
+        />
+
         <Section banner>
           <h1>Welcome Home</h1>
 
           <p>
             Sowles Homes aims to provide the people of Portland and surrounding
-            areas with a home to be proud of. We currently have units available.
+            areas with a place to call home. We currently have units available.
             Come take a look!
           </p>
 

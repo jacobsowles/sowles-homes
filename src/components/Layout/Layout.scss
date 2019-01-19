@@ -3,11 +3,6 @@
 @import '../../styles/variables';
 
 .layout {
-  background: no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -18,5 +13,12 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+  }
+
+  .background {
+    height: 100%;
+    position: fixed !important;
+    width: 100%;
+    z-index: -100;
   }
 }
