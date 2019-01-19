@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Sowles Homes`,
-    description: `Real estate company providing residents of Portland and surrounding areas with housing to be proud of`,
+    description: `Real estate company providing residents of Portland and surrounding areas with homes to be proud of`,
     author: `@jacobsowles`,
   },
   plugins: [
