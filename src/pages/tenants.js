@@ -1,4 +1,4 @@
-import { graphql, Link, StaticQuery } from 'gatsby';
+import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
 
 import Layout from '../components/Layout';
@@ -48,38 +48,36 @@ const TenantsPage = () => (
             <li>
               <SectionItem
                 icon={['fas', 'home']}
+                linkUrl="https://home.cozy.co/#!/"
                 subtitle="Manage your home via our tenant dashboard."
-                title={<a href=" https://home.cozy.co/#!/">Dashboard</a>}
+                title={<p className="brand">Dashboard</p>}
               />
             </li>
 
             <li>
               <SectionItem
                 icon={['fas', 'tools']}
+                linkUrl="https://home.cozy.co/app/#!/maintenance-requests/"
                 subtitle="Submit a maintenance request for any problems with your home."
-                title={
-                  <a href="https://home.cozy.co/app/#!/maintenance-requests/">
-                    Maintenance
-                  </a>
-                }
+                title={<p className="brand">Maintenance</p>}
               />
             </li>
 
             <li>
               <SectionItem
                 icon={['fas', 'credit-card']}
+                linkUrl="https://home.cozy.co/app/#!/payments/"
                 subtitle="Make a one-time payment, set up autopayments, and review past payments."
-                title={
-                  <a href="https://home.cozy.co/app/#!/payments/">Payments</a>
-                }
+                title={<p className="brand">Payments</p>}
               />
             </li>
 
             <li>
               <SectionItem
                 icon={['fas', 'at']}
+                linkUrl="/contact/"
                 subtitle="Get in touch and we'll get back to you shortly."
-                title={<Link to="/contact/">Contact Us</Link>}
+                title={<p className="brand">Contact Us</p>}
               />
             </li>
           </ul>

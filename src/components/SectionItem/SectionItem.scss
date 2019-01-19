@@ -4,18 +4,6 @@
   display: inline-block;
   max-width: 800px;
 
-  &:hover {
-    cursor: pointer;
-
-    a {
-      text-decoration: none;
-    }
-
-    svg {
-      color: $text-dark;
-    }
-  }
-
   &:last-child {
     margin-bottom: 0;
   }
@@ -34,6 +22,19 @@
     & > * {
       display: inline-block;
       vertical-align: middle;
+    }
+  }
+}
+
+a.section-item {
+  color: $text-dark;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+
+    svg {
+      color: $text-dark;
     }
   }
 }
