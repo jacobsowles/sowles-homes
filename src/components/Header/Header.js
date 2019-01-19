@@ -13,9 +13,6 @@ const Header = ({ siteTitle }) => (
         <Link className="home-link" to={`/`}>
           <div className="header-text-wrapper">
             <h1>{siteTitle}</h1>
-            <p className="tagline">
-              Providing people with a place to call home
-            </p>
           </div>
         </Link>
       </Navbar.Brand>
