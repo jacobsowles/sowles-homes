@@ -81,7 +81,7 @@ const ContactPage = () => (
 
 const query = graphql`
   query {
-    bannerImage: file(relativePath: { regex: "/contact.jpg/" }) {
+    bannerImage: file(relativePath: { regex: "/3-women.jpg/" }) {
       childImageSharp {
         fluid(maxWidth: 3000) {
           ...GatsbyImageSharpFluid
