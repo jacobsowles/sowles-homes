@@ -14,9 +14,14 @@
     color: $text-white;
     display: flex;
     flex-direction: column;
-    padding: 130px 80px 300px 80px;
+    padding: 150px 80px 300px 80px;
     text-align: right;
     text-shadow: $text-shadow;
+
+    & > * {
+      animation: bannerSlideIn 1s;
+      animation-fill-mode: forwards;
+    }
 
     h1 {
       font-size: 4em;
@@ -86,5 +91,17 @@
       padding-right: 20px;
       text-align: center;
     }
+  }
+}
+
+@keyframes bannerSlideIn {
+  from {
+    opacity: 0.01;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(-20px);
+    transition: opacity 1s ease-in-out;
   }
 }
