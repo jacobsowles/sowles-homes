@@ -47,42 +47,30 @@ const ContactPage = () => (
         <Section center color="white" flex>
           <ul className="section-item-list">
             <li>
-              <SectionItem
-                icon={['fas', 'envelope']}
-                subtitle={
-                  <>
-                    <p>
-                      Please send checks and physical documents to the following
-                      address:
-                    </p>
+              <SectionItem icon={['fas', 'envelope']} title="Physical Mail">
+                <p>
+                  Please send checks and physical documents to the following
+                  address:
+                </p>
 
-                    <br />
+                <br />
 
-                    <blockquote>
-                      <p>Sowles Homes</p>
-                      <p>P.O. Box 66013</p>
-                      <p>Portland, OR 97290</p>
-                    </blockquote>
-                  </>
-                }
-                title="Physical Mail"
-              />
+                <blockquote>
+                  <p>Sowles Homes</p>
+                  <p>P.O. Box 66013</p>
+                  <p>Portland, OR 97290</p>
+                </blockquote>
+              </SectionItem>
             </li>
             <li>
-              <SectionItem
-                icon={['fas', 'at']}
-                subtitle={
-                  <p>
-                    Feel free to reach out to{' '}
-                    <a href="mailto:info@sowleshomes.com">
-                      info@sowleshomes.com
-                    </a>
-                    . Email is the fastest way to receive a response. We aim to
-                    respond to all emails within one business day.
-                  </p>
-                }
-                title="Email"
-              />
+              <SectionItem icon={['fas', 'at']} title="Email">
+                <p>
+                  Feel free to reach out to{' '}
+                  <a href="mailto:info@sowleshomes.com">info@sowleshomes.com</a>
+                  . Email is the fastest way to receive a response. We aim to
+                  respond to all emails within one business day.
+                </p>
+              </SectionItem>
             </li>
           </ul>
         </Section>

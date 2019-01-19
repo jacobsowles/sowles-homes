@@ -7,11 +7,11 @@ import Link from '../../components/Link';
 import './SectionItem.scss';
 
 const SectionItem = ({
+  children,
   className,
   icon,
   iconSize,
   linkUrl,
-  subtitle,
   title,
 }) => {
   const sectionItem = (
@@ -26,7 +26,7 @@ const SectionItem = ({
 
         <div className="text-wrapper">
           <h2>{title}</h2>
-          {subtitle && <p>{subtitle}</p>}
+          {children}
         </div>
       </div>
     </div>
@@ -50,7 +50,6 @@ SectionItem.propTypes = {
   icon: PropTypes.array,
   iconSize: PropTypes.string,
   linkUrl: PropTypes.string,
-  subtitle: PropTypes.string,
   title: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
 };
 
@@ -59,7 +58,6 @@ SectionItem.defaultProps = {
   icon: undefined,
   iconSize: '4x',
   linkUrl: undefined,
-  subtitle: '',
 };
 
 export default SectionItem;

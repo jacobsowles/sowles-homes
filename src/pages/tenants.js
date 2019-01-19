@@ -49,36 +49,45 @@ const TenantsPage = () => (
               <SectionItem
                 icon={['fas', 'home']}
                 linkUrl="https://home.cozy.co/#!/"
-                subtitle="Manage your home via our tenant dashboard."
                 title={<p className="brand">Dashboard</p>}
-              />
+              >
+                <p>Manage your home via our tenant dashboard.</p>
+              </SectionItem>
             </li>
 
             <li>
               <SectionItem
                 icon={['fas', 'tools']}
                 linkUrl="https://home.cozy.co/app/#!/maintenance-requests/"
-                subtitle="Submit a maintenance request for any problems with your home."
                 title={<p className="brand">Maintenance</p>}
-              />
+              >
+                <p>
+                  Submit a maintenance request for any problems with your home.
+                </p>
+              </SectionItem>
             </li>
 
             <li>
               <SectionItem
                 icon={['fas', 'credit-card']}
                 linkUrl="https://home.cozy.co/app/#!/payments/"
-                subtitle="Make a one-time payment, set up autopayments, and review past payments."
                 title={<p className="brand">Payments</p>}
-              />
+              >
+                <p>
+                  Make a one-time payment, set up autopayments, and review past
+                  payments.
+                </p>
+              </SectionItem>
             </li>
 
             <li>
               <SectionItem
                 icon={['fas', 'at']}
                 linkUrl="/contact/"
-                subtitle="Get in touch and we'll get back to you shortly."
                 title={<p className="brand">Contact Us</p>}
-              />
+              >
+                <p>Get in touch and we'll get back to you shortly.</p>
+              </SectionItem>
             </li>
           </ul>
         </Section>
