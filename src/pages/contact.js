@@ -38,10 +38,7 @@ const ContactPage = () => (
         <Section banner>
           <h1>Contact Us</h1>
 
-          <p>
-            Get in touch with your questions and comments. We'll reach out to
-            you as soon as possible.
-          </p>
+          <p>Get in touch with your questions and comments.</p>
         </Section>
 
         <Section center color="white" flex>

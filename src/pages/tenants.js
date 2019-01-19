@@ -38,8 +38,8 @@ const TenantsPage = () => (
           <h1>Current Tenants</h1>
 
           <p>
-            If you're already a tenant with us, use the links below to manage
-            your home.
+            Use the links below to manage your home with Cozy, the tenant
+            portal.
           </p>
         </Section>
 
@@ -51,7 +51,7 @@ const TenantsPage = () => (
                 linkUrl="https://home.cozy.co/#!/"
                 title={<p className="brand">Dashboard</p>}
               >
-                <p>Manage your home via our tenant dashboard.</p>
+                <p>Manage your home.</p>
               </SectionItem>
             </li>
 
@@ -61,9 +61,7 @@ const TenantsPage = () => (
                 linkUrl="https://home.cozy.co/app/#!/maintenance-requests/"
                 title={<p className="brand">Maintenance</p>}
               >
-                <p>
-                  Submit a maintenance request for any problems with your home.
-                </p>
+                <p>Submit a maintenance request for your home.</p>
               </SectionItem>
             </li>
 
@@ -74,8 +72,8 @@ const TenantsPage = () => (
                 title={<p className="brand">Payments</p>}
               >
                 <p>
-                  Make a one-time payment, set up autopayments, and review past
-                  payments.
+                  Make a one-time payment, set up automatic payments, and review
+                  past payments.
                 </p>
               </SectionItem>
             </li>
@@ -86,7 +84,7 @@ const TenantsPage = () => (
                 linkUrl="/contact/"
                 title={<p className="brand">Contact Us</p>}
               >
-                <p>Get in touch and we'll get back to you shortly.</p>
+                <p>Get in touch with your questions and comments.</p>
               </SectionItem>
             </li>
           </ul>

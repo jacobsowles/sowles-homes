@@ -37,8 +37,8 @@ const RentalsPage = () => (
           <h1>Available Rentals</h1>
 
           <p>
-            Below is the list of our available rentals. Unless otherwise noted,
-            these homes are available now and ready for new residents.
+            Below is the list of our available rentals. Click the images to see
+            more details about each home.
           </p>
         </Section>
 
