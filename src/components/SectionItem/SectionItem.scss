@@ -29,9 +29,14 @@
 a.section-item {
   color: $text-dark;
 
+  &:active,
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+
   &:hover {
     cursor: pointer;
-    text-decoration: none;
 
     svg {
       color: $text-dark;
