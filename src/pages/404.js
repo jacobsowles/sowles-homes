@@ -1,5 +1,4 @@
 import { graphql, StaticQuery } from 'gatsby';
-import Image from 'gatsby-image';
 import React from 'react';
 
 import Layout from '../components/Layout';
@@ -10,14 +9,12 @@ const NotFoundPage = () => (
   <StaticQuery
     query={query}
     render={data => (
-      <Layout transparentFooter>
+      <Layout
+        background={data.bannerImage.childImageSharp.fluid}
+        backgroundAlt="interior"
+        transparentFooter
+      >
         <SEO description="Page not found" title="Not found" />
-
-        <Image
-          alt="interior"
-          className="background"
-          fluid={data.bannerImage.childImageSharp.fluid}
-        />
 
         <Section banner>
           <h1>Not Found</h1>

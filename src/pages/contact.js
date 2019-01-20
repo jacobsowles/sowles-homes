@@ -1,5 +1,4 @@
 import { graphql, StaticQuery } from 'gatsby';
-import Image from 'gatsby-image';
 import React from 'react';
 
 import Layout from '../components/Layout';
@@ -11,7 +10,10 @@ const ContactPage = () => (
   <StaticQuery
     query={query}
     render={data => (
-      <Layout>
+      <Layout
+        background={data.bannerImage.childImageSharp.fluid}
+        backgroundAlt="3 people with phones"
+      >
         <SEO
           description="Contact Sowles Homes"
           keywords={[
@@ -30,12 +32,6 @@ const ContactPage = () => (
             'Sowles Real Estate',
           ]}
           title="Contact Us"
-        />
-
-        <Image
-          alt="interior"
-          className="background"
-          fluid={data.bannerImage.childImageSharp.fluid}
         />
 
         <Section banner>

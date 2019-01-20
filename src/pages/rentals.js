@@ -11,7 +11,10 @@ const RentalsPage = () => (
   <StaticQuery
     query={query}
     render={data => (
-      <Layout>
+      <Layout
+        background={data.bannerImage.childImageSharp.fluid}
+        backgroundAlt="interior"
+      >
         <SEO
           description="Homes available for rent"
           keywords={[
@@ -27,12 +30,6 @@ const RentalsPage = () => (
             'Sowles Real Estate',
           ]}
           title="Available Rentals"
-        />
-
-        <Image
-          alt="interior"
-          className="background"
-          fluid={data.bannerImage.childImageSharp.fluid}
         />
 
         <Section banner>

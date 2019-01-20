@@ -1,5 +1,4 @@
 import { graphql, Link, StaticQuery } from 'gatsby';
-import Image from 'gatsby-image';
 import React from 'react';
 
 import Layout from '../components/Layout';
@@ -10,7 +9,11 @@ const IndexPage = () => (
   <StaticQuery
     query={query}
     render={data => (
-      <Layout transparentFooter>
+      <Layout
+        background={data.bannerImage.childImageSharp.fluid}
+        backgroundAlt="interior"
+        transparentFooter
+      >
         <SEO
           description="Providing the people of Portland and surrounding areas with a place to call home"
           keywords={[
@@ -26,12 +29,6 @@ const IndexPage = () => (
             'Sowles Real Estate',
           ]}
           title="Home"
-        />
-
-        <Image
-          alt="interior"
-          className="background"
-          fluid={data.bannerImage.childImageSharp.fluid}
         />
 
         <Section banner>
