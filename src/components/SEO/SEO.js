@@ -11,6 +11,8 @@ function SEO({ description, lang, meta, keywords, title }) {
         const metaDescription =
           description || data.site.siteMetadata.description;
 
+        alert(data.bannerImage.childImageSharp.fluid.src);
+
         return (
           <Helmet
             htmlAttributes={{ lang }}
@@ -23,7 +25,7 @@ function SEO({ description, lang, meta, keywords, title }) {
                 property: `og:image`,
                 content: data.bannerImage.childImageSharp.fluid.src,
               },
-              { property: `og:title`, content: title },
+              { property: `og:title`, content: 'Sowles Homes' },
               { property: `og:type`, content: `website` },
               { name: `twitter:card`, content: `summary_large_image` },
               {
@@ -35,7 +37,12 @@ function SEO({ description, lang, meta, keywords, title }) {
                 name: `twitter:image`,
                 content: data.bannerImage.childImageSharp.fluid.src,
               },
-              { name: `twitter:title`, content: title },
+              {
+                name: `twitter:image:alt`,
+                content: 'home interior',
+              },
+              { name: `twitter:site`, content: '@jacobsowles' },
+              { name: `twitter:title`, content: 'Sowles Homes' },
             ]
               .concat(
                 keywords.length > 0
@@ -68,7 +75,7 @@ export default SEO;
 
 const detailsQuery = graphql`
   query DefaultSEOQuery {
-    bannerImage: file(relativePath: { regex: "/interior-1.jpg/" }) {
+    bannerImage: file(relativePath: { regex: "/twitter-card.jpg/" }) {
       childImageSharp {
         fluid(maxWidth: 3000) {
           ...GatsbyImageSharpFluid
