@@ -11,6 +11,10 @@ function SEO({ description, lang, meta, keywords, title }) {
         const metaDescription =
           description || data.site.siteMetadata.description;
 
+        alert(
+          window.location.host + data.bannerImage.childImageSharp.fluid.src
+        );
+
         return (
           <Helmet
             htmlAttributes={{ lang }}
@@ -33,9 +37,9 @@ function SEO({ description, lang, meta, keywords, title }) {
               { name: `twitter:description`, content: metaDescription },
               {
                 name: `twitter:image`,
-                content:
-                  window.location.host +
-                  data.bannerImage.childImageSharp.fluid.src,
+                content: `sowleshomes.com${
+                  data.bannerImage.childImageSharp.fluid.src
+                }`,
               },
               { name: `twitter:image:alt`, content: 'home interior' },
               { name: `twitter:site`, content: '@jacobsowles' },
