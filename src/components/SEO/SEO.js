@@ -11,10 +11,6 @@ function SEO({ description, lang, meta, keywords, title }) {
         const metaDescription =
           description || data.site.siteMetadata.description;
 
-        alert(
-          window.location.host + data.bannerImage.childImageSharp.fluid.src
-        );
-
         return (
           <Helmet
             htmlAttributes={{ lang }}
