@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Sowles Homes`,
-    description: `Real estate company providing residents of Portland and surrounding areas with homes to be proud of`,
     author: `@jacobsowles`,
+    description: `Real estate company providing residents of Portland and surrounding areas with homes to be proud of`,
+    siteUrl: `https://sowleshomes.com`,
+    title: `Sowles Homes`,
   },
   plugins: [
     {
@@ -21,6 +22,7 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
