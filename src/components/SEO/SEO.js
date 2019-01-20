@@ -21,7 +21,9 @@ function SEO({ description, lang, meta, keywords, title }) {
               { property: `og:description`, content: metaDescription },
               {
                 property: `og:image`,
-                content: data.bannerImage.childImageSharp.fluid.src,
+                content: `https://sowleshomes.com${
+                  data.bannerImage.childImageSharp.fluid.src
+                }`,
               },
               { property: `og:title`, content: 'Sowles Homes' },
               { property: `og:type`, content: `website` },
@@ -33,7 +35,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               { name: `twitter:description`, content: metaDescription },
               {
                 name: `twitter:image`,
-                content: `sowleshomes.com${
+                content: `https://sowleshomes.com${
                   data.bannerImage.childImageSharp.fluid.src
                 }`,
               },
