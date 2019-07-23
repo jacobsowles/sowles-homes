@@ -1,4 +1,4 @@
-import { graphql, Link, StaticQuery } from 'gatsby';
+import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
 
 import Layout from '../components/Layout';
@@ -36,13 +36,14 @@ const IndexPage = () => (
 
           <p>
             Sowles Homes aims to provide the people of Portland and surrounding
-            areas with a place to call home. We currently have units available.
-            Come take a look!
+            areas with a place to call home.
           </p>
 
+          {/*We currently have units available.
+            Come take a look!
           <Link className="button" to="/rentals/">
             Rentals available now
-          </Link>
+          </Link>*/}
         </Section>
       </Layout>
     )}

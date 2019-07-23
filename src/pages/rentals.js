@@ -1,9 +1,7 @@
 import { graphql, StaticQuery } from 'gatsby';
-import Image from 'gatsby-image';
 import React from 'react';
 
 import Layout from '../components/Layout';
-import RentalListing from '../components/RentalListing';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
 
@@ -42,7 +40,7 @@ const RentalsPage = () => (
         </Section>
 
         <Section color="white" flex>
-          <RentalListing
+          {/*<RentalListing
             address="8441 SE Bush Street"
             baths="1"
             beds="2"
@@ -56,7 +54,11 @@ const RentalsPage = () => (
               fluid={data.bushImage.childImageSharp.fluid}
               alt="Home at 8441 SE Bush Street"
             />
-          </RentalListing>
+          </RentalListing>*/}
+          <p>
+            All of our homes are currently occupied, but thank you for your
+            interest, and check back often!
+          </p>
         </Section>
       </Layout>
     )}
