@@ -43,22 +43,6 @@ const ContactPage = () => (
         <Section center color="white" flex>
           <ul className="section-item-list">
             <li>
-              <SectionItem icon={['fas', 'envelope']} title="Physical Mail">
-                <p>
-                  Please send checks and physical documents to the following
-                  address:
-                </p>
-
-                <br />
-
-                <blockquote>
-                  <p>Sowles Homes</p>
-                  <p>P.O. Box 66013</p>
-                  <p>Portland, OR 97290</p>
-                </blockquote>
-              </SectionItem>
-            </li>
-            <li>
               <SectionItem icon={['fas', 'at']} title="Email">
                 <p>
                   Feel free to reach out to{' '}

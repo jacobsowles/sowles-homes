@@ -16,12 +16,6 @@ const Footer = ({ transparent }) => (
         <ul>
           <li>
             <TextWithIcon
-              icon={['fas', 'envelope']}
-              text="P.O. Box 66013, Portland, OR 97290"
-            />
-          </li>
-          <li>
-            <TextWithIcon
               icon={['fas', 'at']}
               text="info@sowleshomes.com"
               url="mailto:info@sowleshomes.com"
