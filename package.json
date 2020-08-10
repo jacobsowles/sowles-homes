@@ -1,7 +1,4 @@
 {
-  "engines": {
-    "node": "^10.16.0"
-  },
   "name": "sowles-homes",
   "private": true,
   "description": "Company info and tenant portal for Sowles Homes",
