@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "10.16.0"
+    "node": "^10.16.0"
   },
   "name": "sowles-homes",
   "private": true,
