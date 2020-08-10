@@ -32,11 +32,6 @@ const RentalsPage = () => (
 
         <Section banner>
           <h1>Available Rentals</h1>
-
-          <p>
-            Below is the list of our available rentals. Click the images to see
-            more details about each home.
-          </p>
         </Section>
 
         <Section color="white" flex>
@@ -56,8 +51,14 @@ const RentalsPage = () => (
             />
           </RentalListing>*/}
           <p>
-            All of our homes are currently occupied, but thank you for your
-            interest, and check back often!
+            An up-to-date list of our available rentals can be found{' '}
+            <a
+              alt="list of available rentals"
+              href="https://home.cozy.co/app/#!/profile/sowleshomes"
+            >
+              here
+            </a>
+            .
           </p>
         </Section>
       </Layout>
