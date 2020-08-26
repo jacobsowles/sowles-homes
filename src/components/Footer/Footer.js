@@ -52,9 +52,7 @@ const Footer = ({ transparent }) => (
     </div>
 
     <small>
-      Copyright © {new Date().getFullYear()} <Link to="/">Sowles Homes</Link>{' '}
-      &nbsp;|&nbsp; Site design by{' '}
-      <a href="https://jacobsowles.com">Jacob Sowles</a>
+      Copyright © {new Date().getFullYear()} <Link to="/">Sowles Homes</Link>
     </small>
   </footer>
 );
